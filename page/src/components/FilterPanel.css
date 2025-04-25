@@ -1,0 +1,105 @@
+.filter-panel {
+  width: 300px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  overflow-y: auto;
+  margin-top: 60px;
+}
+
+.sort-box,
+.filter-box,
+.mode-box {
+  margin-bottom: 20px;
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.sort-header {
+  padding: 10px;
+  color: #000;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sort-options {
+  padding: 10px;
+  background-color: white;
+}
+
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clear-filters {
+  background-color: transparent;
+  border: none;
+  color: #005eac;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.specialty-search {
+  width: 100%;
+  padding: 5px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.scrollbar {
+  max-height: 200px;
+  overflow-y: scroll;
+}
+
+.mode-box label {
+  display: block;
+}
+
+.doctor-cards {
+  margin-left: 320px;
+  padding: 20px;
+}
+
+.doctor-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.doctor-photo img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.doctor-info {
+  flex-grow: 1;
+}
+
+.doctor-name {
+  font-weight: bold;
+}
+
+.doctor-specialty {
+  color: #666;
+}
+
+.doctor-fee,
+.doctor-experience {
+  font-size: 14px;
+}
