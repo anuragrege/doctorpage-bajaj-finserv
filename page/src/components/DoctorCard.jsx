@@ -1,23 +1,29 @@
 import React from "react";
-// import "./DoctorCard.css";
+import "./DoctorCard.css";
 
 const DoctorCard = ({ doctor }) => {
+  if (!doctor) {
+    return null;
+  }
+
+  const { photo, name, specialities, experience, fees, clinic } = doctor;
+
   return (
     <div className="doctor-card" data-testid="doctor-card">
-      <img src={doctor.photo} alt={doctor.name} className="doctor-photo" />
+      <img src={photo} alt={name} className="doctor-photo" />
 
       <div className="doctor-info">
-        <h2 data-testid="doctor-name">{doctor.name}</h2>
+        <h2 data-testid="doctor-name">{name}</h2>
 
         <p data-testid="doctor-specialty">
-          {doctor.specialities.map((s) => s.name).join(", ")}
+          {specialities ? specialities.map((s) => s.name).join(", ") : "N/A"}
         </p>
 
-        <p data-testid="doctor-experience">{doctor.experience}</p>
+        <p data-testid="doctor-experience">{experience}</p>
 
-        <p data-testid="doctor-fee">{doctor.fees}</p>
+        <p data-testid="doctor-fee">{fees}</p>
 
-        <p className="clinic-name">{doctor.clinic?.name}</p>
+        {clinic && <p className="clinic-name">{clinic.name}</p>}
       </div>
     </div>
   );

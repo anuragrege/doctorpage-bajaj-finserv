@@ -1,0 +1,72 @@
+.doctor-card {
+  display: flex;
+  flex-direction: column;
+  margin-left: 400px;
+  margin-top: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: 500px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.doctor-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.doctor-info {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.doctor-info h2 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.doctor-info p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.clinic-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.doctor-footer {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  text-align: right;
+}
+
+.doctor-fee {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.book-appointment {
+  padding: 10px 20px;
+  background-color: #005eac;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.book-appointment:hover {
+  background-color: #003e7d;
+}
